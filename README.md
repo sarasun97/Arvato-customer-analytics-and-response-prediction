@@ -1,6 +1,6 @@
 # Arvato customer analytics and response prediction
  Part of the Udacity Data Scientist Nanodegree Program
- Blog post for this project can be found [here]( ) on my medium platform
+ A blog post for this project can be found [here]( ) on my medium platform
 ## Table of Contents
 1. Installation
 2. Project Motivation
@@ -16,37 +16,40 @@
   [sklearn](https://sklearn.org/)
 
 ## Project Motivation
-This is my cpastone project for the Udacity Data Science Nanodegree program. The goal of this projec is to analyze how can a client of Bertelsmann Arvato, a mail-order company in Germany that sells orgainic products, acquires new customers more efficiently.Instead of reaching out to the general propulatio, the client can reach out to people that we identified as being the most likely to become new customers
+This is my capstone project for the Udacity Data Science Nanodegree program. This project aims to analyze how a client of Bertelsmann Arvato, a mail-order company in Germany that sells organic products, acquires new customers more efficiently. Instead of reaching out to the general population, the client can reach out to people that we identified as being the most likely to become new customers.
 
-The dataset is provided by [Bertelsmann Arvato](https://www.bertelsmann.com/divisions/arvato),an internationally active services company that develops and implements innovative solutions for business customers from around the world.  The data is real-life data, and it is confidential, so I will not provide the dataset here.
+The dataset is provided by [Bertelsmann Arvato](https://www.bertelsmann.com/divisions/arvato), an internationally active services company developing and implementing innovative solutions for business customers from around the world.  The data is real-life data, and it is confidential, so I will not provide the dataset here.
 
 ## Dataset Description
 There are four data files associated with this project:
 
-1. Udacity_AZDIAS_052018.csv: Demographics data for the general population of Germany; 891 211 persons (rows) x 366 features (columns).\
-2. Udacity_CUSTOMERS_052018.csv: Demographics data for customers of a mail-order company; 191 652 persons (rows) x 369 features (columns).\
-3. Udacity_MAILOUT_052018_TRAIN.csv: Demographics data for individuals who were targets of a marketing campaign; 42 982 persons (rows) x 367 (columns).\
+1. Udacity_AZDIAS_052018.csv: Demographics data for the general population of Germany; 891 211 persons (rows) x 366 features (columns).
+2. Udacity_CUSTOMERS_052018.csv: Demographics data for customers of a mail-order company; 191 652 persons (rows) x 369 features (columns).
+3. Udacity_MAILOUT_052018_TRAIN.csv: Demographics data for individuals who were targets of a marketing campaign; 42 982 persons (rows) x 367 (columns).
 4. Udacity_MAILOUT_052018_TEST.csv: Demographics data for individuals who were targets of a marketing campaign; 42 833 persons (rows) x 366 (columns).
 
 ## Methods
 1. Customer segmentation
-I analyzed demographics data for customers, comparing it against demographics information for the general population. I used unsupervised learning techniques to perform customer segmentation, identifying the parts of the population that best describe the core customer base of the company. 
+I analyzed demographics data for customers, comparing it against demographics information for the general population. I used unsupervised learning techniques to perform customer segmentation, identifying the parts of the population that best describe the company's core customer base. 
 
 2. Response Prediction
 Using the Udacity_MAILOUT_052018_TRAIN dataset, I made a model to predict which individuals are most likely to convert into becoming customers for the company. The column "RESPONSE" indicates whether or not each recipient became a customer of the company. 
 
 ## Results
-There are 
+The general population is divided into 6 clusters; cluster 4 has the highest positive difference in proportion between customers and the general audience. Clusters 1 and 5 have the highest negative difference in proportion between customers and the general audience.
+
+Among the four algorithms: Logistic Regression, Random Forest Classifier, Gradient Boosting Classifier and 
+Support Vector Classification, Gradient Boosting Classifier gives the best result. The mean cross-validated auc score of the best_estimator is 0.656; the validation data auc score is 0.726.
+
+In the Kaggle competition, the auc score I got is 0.782
 
 ## Licensing, Authors, and Acknowledgements
 ### Authors: 
 Sara Sun
 
-Blog post for this project can be found [here](https://sarasun97.medium.com/what-should-i-expect-when-considering-different-room-types-on-airbnb-35b3115a6574) on my medium platform
+A blog post for this project can be found [here]() on my medium platform
 ### Acknowledgements
 I have learned a lot from [Data Scientist Nanodegree Program](https://classroom.udacity.com)
 
-I downloaded the data from [Inside AirBnB](http://insideairbnb.com/get-the-data.html)
-
-I learned a lot from [Matheus Vasconcellos's project](https://github.com/matheusvclls/airbnb_buenos_aires) and [Siddharth Sabat's project](https://github.com/SiddharthSabat/Data-Science-and-ML-Portfolio/tree/main/Write%20a%20Data%20Science%20Blog%20Post)
+The dataset is provided by [Bertelsmann Arvato](https://www.bertelsmann.com/divisions/arvato)
 

@@ -1,6 +1,6 @@
 # Arvato customer analytics and response prediction
  Part of the Udacity Data Scientist Nanodegree Program
- A blog post for this project can be found [here](https://sarasun97.medium.com/customer-analytics-and-response-prediction-for-arvato-part-2-b3646067585c) (post 1) and [here](https://sarasun97.medium.com/customer-analytics-and-response-prediction-for-arvato-part-2-b3646067585c) (post 2) on my medium platform
+ A blog post for this project can be found [here](https://sarasun97.medium.com/customer-analytics-and-response-prediction-for-arvato-part-1-314d80605e5a) (post 1) and [here](https://sarasun97.medium.com/customer-analytics-and-response-prediction-for-arvato-part-2-b3646067585c) (post 2) on my medium platform
 ## Table of Contents
 1. Installation
 2. Project Motivation
@@ -48,7 +48,7 @@ In the Kaggle competition, the auc score I got is 0.782
 ### Authors: 
 Sara Sun
 
-A blog post for this project can be found [here](https://sarasun97.medium.com/customer-analytics-and-response-prediction-for-arvato-part-2-b3646067585c) (post 1) and [here](https://sarasun97.medium.com/customer-analytics-and-response-prediction-for-arvato-part-2-b3646067585c) (post 2) on my medium platform
+A blog post for this project can be found [here](https://sarasun97.medium.com/customer-analytics-and-response-prediction-for-arvato-part-1-314d80605e5a) (post 1) and [here](https://sarasun97.medium.com/customer-analytics-and-response-prediction-for-arvato-part-2-b3646067585c) (post 2) on my medium platform
 ### Acknowledgements
 I have learned a lot from [Data Scientist Nanodegree Program](https://classroom.udacity.com)
 
